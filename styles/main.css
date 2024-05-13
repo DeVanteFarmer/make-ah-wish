@@ -1,0 +1,66 @@
+/* Base styles for text elements */
+body, button, input, select, textarea {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+/* Background styles */
+body {
+    background-color: black;
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+}
+
+/* Section and header styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit; /* Inherit from body to avoid redundancy */
+    letter-spacing: 2px;
+}
+
+h1 {
+    text-align: center;
+    border: 6px inset gold;
+    background-image: url(./images/banner.jpg);
+}
+
+/* Class-specific styles */
+.details {
+    display: block;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    list-style-type: disc;
+}
+
+.info h2 {
+    margin: 10px 0;
+}
+
+.info li, .pairings li {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.pairings {
+    display: flex;
+    width: 100%;
+    border: inset gold 6px;
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+    font-size: 2rem;
+    list-style-type: disc;
+    justify-content: space-evenly;
+}
+
+/* Eliminated redundant font-family declarations by setting them at a higher level (body)
+   and using inheritance where appropriate. Consolidated list-style and padding rules for '.info li' and '.pairings li'.
+   Removed unused or redundant rules. */
